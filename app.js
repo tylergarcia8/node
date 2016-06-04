@@ -10,9 +10,9 @@ app.set('views', path.join(__dirname, 'views'));
 
 // use middleware
 
-app.use(bodyParser());
+.use(express.static(path.join(__dirname, 'bower_components')));
 
-app.use(express.static(path.join(__dirname, 'bower_components')));
+app.use(bodyParser());
 
 // define notes
 
