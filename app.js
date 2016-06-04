@@ -10,7 +10,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 // use middleware
 
-.use(express.static(path.join(__dirname, 'bower_components')));
+app.use(express.static(path.join(__dirname, 'bower_components')));
 
 app.use(bodyParser());
 
