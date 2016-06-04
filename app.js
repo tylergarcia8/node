@@ -16,29 +16,9 @@ app.use(bodyParser());
 
 // define notes
 
-var todoItems = [
-		{ id: 1, desc: 'foo' },
-		{ id: 2, desc: 'bar' },
-		{ id: 3, desc: 'baz' }
-	];
+app.use(require('./todos'));
 
-app.get('/', function(req, res){
-	res.render('index', {
-		title: 'WindPower',
-		items: todoItems
-	});
-});
-
-app.post('/add', function(req, res) {
-	var newItem = req.body.newItem;
-	
-	todoItems.push({
-		id:todoItems.length + 1,
-		desc: newItem
-	});
-	res.redirect('/');
-});
-
+// start the server
 app.listen(3000, function() {
 	console.log('Listening on port 3000');
 });
