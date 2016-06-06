@@ -1,0 +1,25 @@
+{
+  "name": "nodechallenge",
+  "description": "Code Challenge",
+  "main": "app.js",
+  "authors": [
+    "Tyler Garcia"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angularjs",
+    "ng"
+  ],
+  "homepage": "https://github.com/tylergarcia8/node",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
