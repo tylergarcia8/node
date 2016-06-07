@@ -36,9 +36,24 @@
       </nav>
     </div>
     <h1>Wind Power</h1>
-
   </header>
 </section>
+
+
+<section id="contact">
+          <div class="content">
+            <div id="form">
+              <form action="" id="contactForm" method="post">
+                <span>Name</span>
+                <input type="text" name="name" class="name" placeholder="Enter your name" tabindex=1 />
+                <span>Email</span>
+                <input type="text" name="email" class="email" placeholder="Enter your email" tabindex=2 />
+                <span>Message</span>
+                <textarea class="message" placeholder="Enter your message" tabindex=4></textarea>
+                <input type="submit" name="submit" value="Send e-mail" class="submit" tabindex=5>
+              </form>
+            </div>
+      </section>
 
 <style type="text/css">
  h1{
@@ -240,6 +255,59 @@
 body {
   background-color: #e0eafd;
 }
+
+/* contact form */
+
+body {
+  color: #B1B1B1;
+  margin: 15px auto 0;
+}
+#contact #form {
+  width:371px;
+  float:right;
+  margin-top: 8%;
+  margin-right: 35%;
+}
+#contact #form h2 {
+  font: 48px 'Bree Serif', Georgia, serif;
+}
+#contact #form span {
+  display:block;
+  float:left;
+  width:100px;
+  padding-top:5px;
+  font: 14px/16px'Bree Serif', Georgia, serif;
+}
+#contact #form input {
+  float:left;
+  width:366px;
+  border:0px;
+  color:#F1F1F1;
+  padding:10px 10px 10px 30px;
+  font: 11px/20px'Open Sans', Verdana, Helvetica, sans-serif;
+  margin-bottom:10px;
+}
+#contact #form textarea {
+  float:left;
+  border:0px;
+  width:366px;
+  height:140px;
+  padding:10px 10px 10px 30px;
+  font: 11px/20px'Open Sans', Verdana, Helvetica, sans-serif;
+  color:#F1F1F1;
+  resize: none;
+}
+#contact #form input.submit {
+  cursor: pointer;
+  width:85px;
+  height:30px;
+  padding:0px 0px 5px 0px;
+  margin:10px 16px 0px 0px;
+  background:#222222;
+  color:#F1F1F1;
+  font: 14px/16px'Bree Serif', Georgia, serif;
+}
+
 
 </style>
 
