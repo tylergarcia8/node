@@ -6,7 +6,7 @@ var router = express.Router();
 	res.render('index');
 });
 	router.get('/users', function(req, res) {
-	res.render('users',);
+	res.render('users');
 });
 	router.get('/contact', function(req, res) {
 	res.render('contact');
